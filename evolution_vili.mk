@@ -16,12 +16,15 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit some xtended build stuff.
 TARGET_BOOT_ANIMATION_RES := 1440
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := ImPerfectDev
 WITH_GAPPS=true
 PROCESSOR_MODEL := sm8350
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# MIUI stuff
+TARGET_SHIPS_GALLERY=true
+
+# Rom additions
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 
