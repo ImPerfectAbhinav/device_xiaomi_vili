@@ -12,12 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
 # Inherit some common xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit some xtended build stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1440
 XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := ChampionsGod
+XTENDED_BUILD_MAINTAINER := ImPerfectDev
 WITH_GAPPS=true
 PROCESSOR_MODEL := sm8350
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -29,7 +29,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := xtended_vili
+PRODUCT_NAME := evolution_vili
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
